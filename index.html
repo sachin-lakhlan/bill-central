@@ -13,9 +13,9 @@
 </head>
 
 <body class="font-family">
-    <header class="header-bg">
+    <header class="header-bg mb-500">
         <nav class="py-16 w-100">
-            <div class="container mx-1140">
+            <div class="container max-width-1140">
                 <div class="d-flex align-items-center justify-content-between w-100">
                     <a href="">
                         <img class="logo" src="./assets/image/svg/logo.svg" alt="nav-logo"></a>
@@ -50,8 +50,13 @@
                                     <button
                                         class="nav-btn fw-700 fs-sm fs-sm mt-4 mt-lg-0 justify-content-center align-items-center d-flex gap-2">Get
                                         Started
-                                        <span><img class="align-items-center d-flex" src="assets/image/svg/arrow.svg"
-                                                alt="arrow-img"></span></button>
+                                        <span><svg class="arrow-svg" width="15" height="15" viewBox="0 0 15 15"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 14L14 1M14 1V13.48M14 1H1.52" stroke="#00171F"
+                                                    stroke-width="1.93338" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span></button>
                                 </li>
                             </ul>
                         </li>
@@ -64,7 +69,7 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
+        <div class="container max-width-1140">
             <div class="row">
                 <div class="col-12 col-lg-6 text-center-sm">
                     <p class="fw-400 lh-70 fs-2xl font-family mt-174 text-white">Easily Compare <span
@@ -97,7 +102,7 @@
                     <img class="home-image w-100" src="assets/image/png/header-image.png" alt="home-image">
                 </div>
             </div>
-            <div class="slider-card gap-51 d-flex">
+            <div class="slider-card gap-51 d-flex over-flow ">
                 <img src="assets/image/png/image-1.png" alt="slider-img-1">
                 <img src="assets/image/png/image-2.png" alt="slider-img-2">
                 <img src="assets/image/png/image-3.png" alt="slider-img-3">
@@ -108,7 +113,6 @@
             </div>
         </div>
     </header>
-    <section class="min-vh-100"></section>
     <footer class="d-flex justify-content-center footer-bg flex-column align-items-center min-height-643">
         <div class="container max-width-1140">
             <div class="d-flex justify-content-center align-items-center header-top-div flex-column w-100 mb-68">
@@ -128,7 +132,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-md-6 col-lg-8">
                     <img src="assets/image/png/footer-logo.png" alt="futer-logo">
                     <p class="fs-sm fw-400 lh-24 text-white mx-297 mt-4">Ut auctor nisi mauris eu tincidunt facilisi.
                         Diam
@@ -145,7 +149,7 @@
                         <a href="https://x.com/?lang=en"><img src="assets/image/svg/twiter-logo.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-12 col-md-6 col-lg-2">
                     <ul class="text-decoration-none list-unstyled">
                         <li class="mb-14"><a class="text-decoration-none fw-700 fs-md lh-30 text-white" href="#">Quick
                                 Link</a></li>
@@ -166,7 +170,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-12 col-md-6 col-lg-2">
                     <ul class="text-decoration-none list-unstyled">
                         <li class="mb-14"><a class="text-decoration-none fw-700 fs-md lh-30 text-white"
                                 href="#">Services</a></li>
@@ -180,6 +184,9 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="footer-bottom-line d-flex justify-content-center align-items-center">
+            <p class="footer-bottom-p text-white mb-0">© 2024 BILL CENTRAL, Inc. All Rights Reserved.</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

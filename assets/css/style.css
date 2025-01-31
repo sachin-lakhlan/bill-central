@@ -4,21 +4,10 @@
     font-family: 'Helvetica Neue', sans-serif;
 }
 
-.z-5 {
-    z-index: 5;
-}
 
 .py-22 {
     padding-top: 22px;
     padding-bottom: 22px;
-}
-
-.mx-1140 {
-    max-width: 1140px !important;
-}
-
-.mx-548 {
-    max-width: 548px;
 }
 
 .gap-24 {
@@ -35,10 +24,6 @@
 
 .z-5 {
     z-index: 5;
-}
-
-.mx-1140 {
-    max-width: 1140px !important;
 }
 
 .mx-548 {
@@ -72,9 +57,6 @@
     transform: rotate(42deg);
 }
 
-.z-5 {
-    z-index: 5;
-}
 
 .rotate-45 {
     transform: rotate(-43deg);
@@ -82,10 +64,9 @@
 
 .nav-btn {
     padding: 12px 20px 12px 20px;
-    border-radius: 0px 50px 50px 12px;
+    border-radius: 0px 50px 50px 50px;
     border: none;
     background-color: white;
-    transition: all 200ms linear;
 }
 
 .nav-btn:hover {
@@ -93,23 +74,31 @@
     color: white;
 }
 
+.nav-btn:hover .arrow-svg path {
+    stroke: white;
+}
+
 .mx-506 {
     max-width: 506px
 }
 
 .address-input {
-    border-radius: 0px 100px 100px 20px;
+    border-radius: 0px 100px 100px 50px;
     border: 1px solid #00000033;
     padding: 24px 276px 24px 22px;
 }
 
 .home-btn {
     padding: 12px 20px 12px 20px;
-    border-radius: 0px 50px 50px 20px;
+    border-radius: 0px 50px 50px 50px;
     background-color: #00A8E8;
     border: none;
     left: 54%;
     margin-top: 13px;
+}
+
+.home-btn:hover {
+    background-color: #257da0;
 }
 
 .home-image {
@@ -137,17 +126,22 @@
 /* section-2 */
 .footer-btn {
     padding: 12px 20px 12px 20px;
-    border-radius: 0px 50px 50px 20px;
+    border-radius: 0px 50px 50px 50px;
     background-color: #00A8E8;
     border: none;
     left: 54%;
     margin-top: 13px;
 }
 
+.footer-btn:hover {
+    background-color: #277493;
+}
+
 .header-bg {
     background-image: url(../image/png/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 
 .header-top-div {
@@ -161,6 +155,18 @@
 
 .mx-620 {
     max-width: 620px;
+}
+
+.footer-bottom-line {
+    width: 100%;
+    height: 61px;
+    border-top: 1px solid #FFFFFF33;
+}
+
+.footer-bottom-p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
 }
 
 .footer-bg {
@@ -187,6 +193,16 @@
 
 .mb-68 {
     margin-bottom: 68px;
+}
+
+.mb-500 {
+    margin-bottom: 500px;
+}
+
+@media (max-width:1140px) {
+    .over-flow {
+        overflow-x: auto;
+    }
 }
 
 @media (max-width:991.98px) {
@@ -224,6 +240,7 @@
     .home-btn {
         left: 50%;
     }
+
 }
 
 @media (max-width:767.98px) {
@@ -299,7 +316,7 @@
 
     .footer-btn {
         top: 0;
-        left: 74%;
+        left: 75%;
     }
 }
 
@@ -313,13 +330,6 @@
 @media (min-width:1199px) {
     .home-btn {
         top: 0;
-        left: 72%;
-    }
-}
-
-@media (min-width:1199px) {
-    .home-btn {
-        top: 0;
-        left: 54%;
+        left: 67%;
     }
 }
